@@ -1,0 +1,27 @@
+{
+  "name": "clh-arcade-server",
+  "version": "1.0.0",
+  "description": "Leaderboard and tracking for Command Line Heroes Arcade machines",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "parse-server-dev": "mongodb-runner start && parse-server --appId CLH --masterKey CLH --databaseURI mongodb://localhost/clh",
+    "parse-server": "parse-server --appId CLH --masterKey CLH --databaseURI mongodb://localhost/clh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redhataccess/clh-arcade-server.git"
+  },
+  "author": "Red Hat, Inc.",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/redhataccess/clh-arcade-server/issues"
+  },
+  "homepage": "https://github.com/redhataccess/clh-arcade-server#readme",
+  "dependencies": {
+    "parse-server": "^3.3.0"
+  },
+  "devDependencies": {
+    "mongodb-runner": "^4.7.1"
+  }
+}
